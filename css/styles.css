@@ -102,8 +102,8 @@ body{
     align-items: center;
 }
 .page-header{
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
     border-bottom: 1px solid #ECECEC
 
 }
@@ -243,8 +243,9 @@ body{
     justify-content: center;
 
    background-color: #F5F4FA;
-   /* width: 270px; */
+   width: 270px;
    height: 120px;
+   border-radius: 4px;
    margin-bottom: 30px;
 }
 /*===========/ABOUT=========== */
@@ -335,11 +336,39 @@ body{
     padding-top: 94px;
 }
 
-.client-item{
+.list-client{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
-   border: 1px solid #AFB1B8;
-   border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.client-list-icon{
+    fill: #AFB1B8;
+}
+.client-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item:hover .client-list-icon,
+.client-item:focus .client-list-icon{
+    fill: #2196F3;
+}
+.client-link:hover,
+.client-link:focus{
+    border-color: #2196F3;
+
 }
 /* ================/Clients========== */
 /* ==========FOOTER================== */
@@ -385,7 +414,54 @@ body{
 .address-main:focus {
     color: #2196F3;
 }
+
+.footer-social{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    size: 14px; 
+    Line-height: 1,14; 
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-list-link{
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-list-link:hover,
+.footer-list-link:focus{
+    background-color: #2196F3;
+}
    
+.footer-list-icon{
+    Fill: #FFFFFF;
+}
+.footer-adress-social{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-icon{
+    margin-left: 70px;
+}
+
+.footer-list-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+} 
+.footer-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 /* ===========2PAGE=========== */
 .modal-btn-white{
     font-family: inherit;
@@ -465,4 +541,13 @@ body{
 .one-section{
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.portfolio-section:hover,
+.portfolio-section:focus{
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-section{
+    margin-bottom: 30px;
 }
